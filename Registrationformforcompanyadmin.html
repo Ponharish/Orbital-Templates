@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <style>
+        .heading {
+          background-color: rgb(196, 227, 238);
+          text-align: center;
+        }
+        .form {
+          text-align: center;
+        }
+        .error {
+          text-align: center;
+          color: red;
+          font-size: 22px;
+        }
+    </style>
+    <body bgcolor = #CAEEC4>
+        <div class = "heading">
+            <br>
+            <font color = #377CDE><h1>Register</h1></font>
+            <hr color=#00008B>
+        </div>
+
+        
+        <div class = "form">
+            <br>
+            <form> <!-- comment: to be done later form action="/action_page.php"--> 
+
+                <table cellpadding = 7; align = center >
+                    <tr valign = "middle">
+                        <td align = "right"><label for="fName">First Name</label></td>
+                        <td align = "left"><input type="text" id="fName" name="fName" placeholder="Bill"></td>
+                        <td><font color = "Red">*</font></td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="lName">Last Name</label></td>
+                        <td align = "left"><input type="text" id="lName" name="lName" placeholder="Jackson"></td>
+                        <td><font color = "Red">*</font></td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="username">Select an Username</label></td>
+                        <td align = "left"><input type="text" id="username" name="username" placeholder="Bill789"></td>
+                        <td><font color = "Red">*</font></td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="domain">Create Domain</label></td>
+                        <td align = "left"><input type="text" id="domain" name="domain" placeholder="@xyz"></td>
+                        <td><font color = "Red">*</font></td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="password">Password</label></td>
+                        <td align = "left"><input type="password" id="password" name="password"></td>
+                        <td><font color = "Red">*</font></td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="cfpassword">Confirm your Password</label></td>
+                        <td align = "left"><input type="password" id="cfpassword" name="cfpassword"></td>
+                        <td><font color = "Red">*</font></td>
+                    </tr>
+
+                    <tr>
+                        <td align = "center" colspan = 2>
+                        <p> Your passowrd should contain atleast 8 characters,<br>
+                         atleast 1 digit, atleast 1 Uppercase and 1 Lowercase letter</p>
+                         </td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="captcha"><img src = "captcha.png" height = 50; width = 140;></label></td>
+                        <td align = "left"><input type="text" id="captcha" name="captcha" placeholder="Enter captcha"></td>
+                        <td><font color = "Red">*</font></td>
+                    </tr>
+
+                </table>
+
+                <br>
+                <p><font color = "Red">* Required</font></p>
+                <br>
+                <br>
+
+                <p>In the next page, please make the payment for registering your company</p>
+                
+                <input type="submit" value="Submit">
+              </form> 
+              
+              
+        </div>
+
+        <div class = "error">
+            <P> </P>
+        </div>
+
+    </body>
+</html>
