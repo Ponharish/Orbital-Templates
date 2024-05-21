@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <style>
+        .heading {
+          background-color: rgb(196, 227, 238);
+          text-align: center;
+        }
+        .form {
+          text-align: center;
+        }
+        .error {
+          text-align: center;
+          color: red;
+          font-size: 22px;
+        }
+    </style>
+    <body bgcolor = #CAEEC4>
+        <div class = "heading">
+            <br>
+            <font color = #377CDE><h1>Login</h1></font>
+            <hr color=#00008B>
+        </div>
+
+        
+
+        <div class = "form">
+            <br>
+            <form> <!-- comment: to be done later form action="/action_page.php"--> 
+
+                <table cellpadding = 7; align = center>
+                    <tr valign = "middle">
+                        <td align = "right"><label for="username">Username</label></td>
+                        <td align = "left"><input type="text" id="username" name="username" placeholder="John"></td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="domain">Domain</label></td>
+                        <td align = "left"><input type="text" id="domain" name="domain" placeholder="@xyz"></td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="password">Password</label></td>
+                        <td align = "left"><input type="password" id="password" name="password"></td>
+                    </tr>
+
+                    <tr valign = "middle">
+                        <td align = "right"><label for="captcha"><img src = "captcha.png" height = 50; width = 140;></label></td>
+                        <td align = "left"><input type="text" id="captcha" name="captcha" placeholder="Enter captcha"></td>
+                    </tr>
+
+                </table>
+
+
+                
+                
+                
+                <br><br>
+                
+                <input type="submit" value="Login">
+              </form> 
+              <br>
+              <a><input type="button" id = "forgotpassword" name = "forgotpassword" value="Forgot Password"></a> <br><br>
+              <!--href = "https://www.google.com" add the link to these buttons later-->
+
+              <a><input type="button" id = "Createaccount" name = "createaccount"  value="Create Account"></a> <br>
+        </div>
+
+        <div class = "error">
+            <P> </P>
+        </div>
+
+    </body>
+</html>
